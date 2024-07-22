@@ -12,16 +12,12 @@ class Solution {
             if (height[i]>height[j]){
                 area=height[j]*(j-i);
                 j--;
-                if(area>max_area){
-                    max_area=area;
-                }
+                max_area=Math.max(max_area,area);
             }
             else{
                 area=height[i]*(j-i);
                 i++;
-                if(area>max_area){
-                    max_area=area;
-                }
+                max_area=Math.max(max_area,area);
             }
         }
         return max_area;
