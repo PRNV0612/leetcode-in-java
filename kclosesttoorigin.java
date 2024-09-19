@@ -1,5 +1,7 @@
 import java.util.Random;
 
+
+//use quick select algo
 public class kclosesttoorigin {
 
     class Solution {
